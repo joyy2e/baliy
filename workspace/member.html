@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/member.css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>BAILY</title>
+</head>
+<body>
+    <div class="member-wrap">
+        <div class="header">
+            <div class="header-inner">
+                <a href="index.html" class="logo"><h1 class="blind">BAILY</h1></a>
+            </div>
+        </div>
+    
+        <div id="member-wrap">
+            <div class="member-box">
+                <div class="member-form">
+                    <form action="submit" id="member-form" method="GET">
+                        <div class="notice">
+                            <p><span>*</span> 은 필수 입력사항입니다.</p>
+                        </div>
+                        <div>
+                            <label>아이디<span> *</span></label>
+                            <input class="input" type="text" name="user-id" id="user-id">
+                        </div>
+                        <div>
+                            <label>비밀번호<span> *</span></label>
+                            <input class="input" type="password" name="user-pw" id="user-pw">
+                        </div>
+                        <div>
+                            <label>비밀번호 재확인<span> *</span></label>
+                            <input class="input" type="password" name="pw" id="user-pw-comfirm">
+                        </div>
+                        <div>
+                            <label>이름<span> *</span></label>
+                            <input class="input" type="text" name="user-name" id="user-name">
+                        </div>
+                        <div>
+                            <label>생년월일<span> *</span></label>
+                            <input class="input" type="date" name="user-birth" id="user-birth">
+                        </div>
+                        <div>
+                            <label>본인 확인 이메일<span class="option">(선택)</span></label>
+                            <input class="input" type="text" name="user-email" id="user-email">
+                        </div>
+                        <div>
+                            <label>휴대전화<span> *</span></label>
+                            <input class="input" type="tel" name="user-tel" id="user-tel" maxlength="13" placeholder="예) 01012345678">
+                        </div>
+                        <div>
+                            <button type="submit" class="member-button">가입하기</button>
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>    
+    
+        <div class="footer">
+            <div class="footer-inner">
+                <ul class="services">
+                    <li><a href="#"><span class="text">이용약관</span></a></li>
+                    <li><a href="#"><span class="text"><strong>개인정보처리방침</strong></span></a></li>                
+                    <li><a href="#"><span class="text">회사 소개</span></a></li>
+                </ul>
+                <p class="copyright">copyright &copy; 2022 BAILY All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#member-form").submit(function(e){
+            e.preventDefault();
+
+            // 아이디의 영문 숫자
+            let pattern3 = /^[a-zA-Z0-9]*$/;
+            if(!pattern3.test($("#user-id").val())){
+                alert("아이디는 영어와 숫자만 입력 가능합니다.");
+                $("#user-id").val('');
+                $("#user-id").focus();
+                return false;
+            }else if($("#user-id").val() == ''){
+                alert("아이디를 입력해주세요.");
+                return false;
+            }
+
+            // 비밀번호
+            if($("#user-pw").val() == ''){
+                alert("비밀번호를 입력해주세요.");
+                $("#user-pw").focus();
+                return false;
+            }
+
+            // 비밀번호 확인
+            if($("#user-pw-comfirm").val() == ''){
+                alert("재확인을 위해 입력하신 비밀번호를 입력해주세요.");
+                $("#user-pw-comfirm").focus();
+                return false;
+            }else if($("#user-pw-comfirm").val() != $("#user-pw").val()){
+                alert("입력하신 비밀번호가 다릅니다.");
+                $("#user-pw-comfirm").focus();
+                return false
+            }
+
+            // 이름 한글
+            let pattern1 = /^[ㄱ-ㅎ가-힣]*$/;
+            if(!pattern1.test($("#user-name").val())){
+                alert("이름은 한글만 입력 가능합니다.");
+                $("#user-name").val('');
+                $("#user-name").focus();
+                return false;
+            }else if($("#user-name").val() == ''){
+                alert("이름을 입력해주세요.");
+                $("#user-name").focus();
+                return false;
+            }
+            
+            // 생년월일
+            if($("#user-birth").val() == ''){
+                alert("생년월일을 입력해주세요.");
+                $("#user-birth").focus();
+                return false;
+            }
+
+            // 휴대전화
+            let pattern4 = /^[0-9]*$/;
+            if(!pattern1.test($("#user-tel").val())){
+                alert("전화번호는 숫자만 입력이 가능합니다.");
+                $("#user-tel").val('');
+                $("#user-tel").focus();
+                return false;
+            }else if($("#user-tel").val() == ''){
+                alert("전화번호를 입력해주세요.");
+                $("#user-tel").focus();
+                return false;
+            }
+            
+            
+
+            alert("회원가입이 완료되었습니다.");
+
+
+
+        });
+    </script>
+</body>
+</html>

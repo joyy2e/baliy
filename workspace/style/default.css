@@ -1,0 +1,84 @@
+@charset "UTF-8"; 
+
+/* 디폴트 css */
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    min-width: 300px;    
+    font-family: 'Noto Sans KR', sans-serif !important;
+    color: #242424;
+    background-color: #fff !important;
+}
+
+body::-webkit-scrollbar { width: 10px; /*스크롤바의 너비*/  height: 5px;} 
+    
+body::-webkit-scrollbar-thumb { 
+    background-color: #59CE8F; /*스크롤바의 색상*/ 
+    border-radius: 0; /*스크롤바 라운드*/} 
+    
+body::-webkit-scrollbar-track { 
+background-color: #eee; /*스크롤바 트랙 색상*/ 
+border-radius: 0; /*스크롤바 트랙 라운드*/ 
+}
+
+
+a{
+    display: block;
+    cursor: pointer;
+}
+
+a:link, a:hover, a:visited, a:active{
+    color: #242424;
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+hr{
+    display: none;
+}
+
+#topBtn{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#topBtn:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+}
+
+
+.pointer {
+    position:absolute; 
+    width:50px; height:50px; 
+    border-radius:50px; 
+    border: 3px solid #000;
+    transition:all 0.5s ease-out;
+    z-index: 1000;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+::selection {
+    background-color: #39674f;
+    color: #fff;
+}

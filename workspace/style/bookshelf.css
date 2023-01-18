@@ -1,0 +1,663 @@
+@charset "UTF-8"; 
+
+body{
+    position: relative;
+}
+
+h1{
+    font-size: 100px;
+    margin: 0 auto 100px;
+    color: #59CE8F;
+    max-width: 1153px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #242424;
+    margin-bottom: 16px;
+    padding: 0 16px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+}
+
+
+.c-bg{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 64px;
+    z-index:2;
+    box-shadow: 5px 24px 68px rgb(102 102 102 / 21%);
+}
+
+.clse-btn{    
+    position: fixed;
+    top: 64px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 50px;
+    border-right: 0.5px solid #dfdfdf;
+    border-left: 0.5px solid #dfdfdf;
+    border-bottom: 0.5px solid #dfdfdf;
+    background-color: #fff;
+    /* box-shadow: 5px 24px 68px rgb(102 102 102 / 21%); */
+    border-radius: 0 0 30px 30px;
+    /* opacity: 0.5; */
+    z-index: 1;
+}
+
+.clse-btn p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #242424;
+    font-weight: 900;
+}
+
+.clse-btn svg{
+    width: 100%;
+    height: 100%;
+}
+
+#category-content{
+    position: absolute;
+    top: 64px;
+    background-color: #fff;
+    width: 100%;
+    /* border-bottom: 0.5px solid #dfdfdf; */
+    box-shadow: 5px 15px 40px rgb(102 102 102 / 10%);
+}
+
+.baily-book{
+    text-align: left;
+}
+
+.swiper-wrap{
+    margin-bottom: 100px;
+}
+
+/* 카테고리 별 */
+
+#category-content{
+    padding: 80px 2%;    
+}
+
+#category-content .bookshelf-content{
+    max-width: 1153px;
+    margin: 0 auto;
+}
+
+/* #category-content ul{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+#category-content li{
+    margin-bottom: 8px;   
+    position: relative;
+    overflow: hidden;
+    width: 49%; 
+    border-radius: 8px;
+    border: 1px solid #f9f9f9;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 4%);
+}
+
+#category-content li a{
+    position: relative;
+    display: block;   
+    width: 100%; 
+    max-height: 100px;
+    height: 100px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#category-content li a:hover{
+    box-sizing: border-box;
+    color: #59CE8F;
+    border: 1px solid #59CE8F;
+    border-radius: 8px;
+}
+
+#category-content li a span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 14px;
+}
+
+#category-content li:nth-child(12),
+#category-content li:nth-child(13),
+#category-content li:nth-child(14),
+#category-content li:nth-child(15),
+#category-content li:nth-child(16),
+#category-content li:nth-child(17),
+#category-content li:nth-child(18),
+#category-content li:nth-child(19),
+#category-content li:nth-child(20),
+#category-content li:nth-child(21),
+#category-content li:nth-child(22){
+    margin-bottom: 0;
+} */
+
+
+
+
+/* 랭킹 */
+
+.ranking{
+    margin-top: 100px;
+    margin-bottom: 0 !important;
+}
+
+.swiper-wrap h2{
+    max-width: 1153px;
+    margin: 0 auto;
+}
+
+.ranking .swiper{
+    height: auto !important;
+}
+
+.ranking .swiper {
+    position: relative;
+    width: 100%;
+    max-width: 1153px !important;
+  }
+
+  .ranking .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+  }
+
+
+  .ranking .swiper {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .ranking .swiper-button-next, .ranking .swiper-button-prev{   
+    width: 50px;   
+    height: 50px;   
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    color : #242424;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 4%);    
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.ranking .swiper-button-next::after, .ranking .swiper-button-prev::after{
+    font-size: 20px !important;
+    font-weight: 900;
+}
+
+.ranking .swiper-pagination{
+    position: absolute;
+    left: 50% !important;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+    width: 60px !important;
+}
+
+.ranking.swiper-pagination span{
+    height: 40px;
+    
+}
+
+.ranking .slide{
+    background-color: #fff;
+    box-shadow: none !important;
+}
+
+.ranking .slide ul{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.ranking .slide li{    
+    cursor: pointer;
+    margin: 0 auto;
+    width: 98%;
+    /* height: 80px; */
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.ranking .slide li:first-child{
+    margin-top: 6px;
+}
+
+.ranking .slide li:last-child{
+    margin-bottom: 6px;
+}
+
+.ranking .slide li .thum{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+.ranking .slide li .thum .thumnail{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.ranking .slide li .thum .thumnail img{
+    width: 100%;
+}
+
+.ranking .slide li .thum .rank,
+.ranking .slide li .thum .author{
+    display: inline-block;
+    text-align: left;
+    height: 25px;
+    width: 270px;    
+    font-size: 16px;
+}
+.ranking .slide li .thum .rank{
+    width: 270px;
+    font-weight: 700;
+}
+
+.ranking .slide li .thum div{
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.ranking .slide li .extends{
+    display: none;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;    
+    padding: 20px;
+    font-size: 12px;
+}
+
+.extendsOn{
+    display: block !important;
+}
+
+.ranking .slide li .extends .img{
+    margin-top: 20px;
+    
+}
+
+.ranking .slide li .extends img{
+    width: 150px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 10%), 0 0 2px rgb(0 0 0 / 20%);
+}
+
+/* 오디오북 */
+.audio .baily-book .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #59CE8F;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
+    
+}
+
+.audio .baily-book .icon svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+/* 주목하는 작가 */
+.bestAuthor .img{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bestAuthor .img img{
+    display: block;
+    width: 100%;
+}
+
+.bestAuthor .slide1 .img img{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+}
+
+.bestAuthor .slide3 .img img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bestAuthor .slide4 .img img{
+    background-color: #bCB8B7;
+}
+
+.bestAuthor .slide2 .img {
+    background-color: #bCB8B7;
+}
+
+.bestAuthor .author{
+    padding: 10px 0 ;
+}
+
+
+.bestAuthor .swiper {
+    position: relative;
+    width: 100%;
+    max-width: 1153px !important;
+    height: 400px !important;
+  }
+
+  .bestAuthor.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+  }
+
+
+  .bestAuthor .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .bestAuthor .swiper-button-next, .bestAuthor .swiper-button-prev{   
+    width: 50px;   
+    height: 50px;   
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    color : #242424;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 4%);    
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.bestAuthor .swiper-button-next::after, .bestAuthor .swiper-button-prev::after{
+    font-size: 20px !important;
+    font-weight: 900;
+}
+
+.bestAuthor .swiper-pagination{
+    position: absolute;
+    left: 50% !important;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+    width: 60px !important;
+}
+
+.bestAuthor .swiper-pagination span{
+    height: 40px;
+    
+}
+
+/* 책 추천 섹션 */
+.recommend{
+    margin-top: 100px;
+    margin-bottom: 0 !important;
+}
+
+.swiper-wrap h2{
+    max-width: 1153px;
+    margin: 0 auto;
+}
+
+.recommend .swiper{
+    height: auto !important;
+}
+
+.recommend .swiper {
+    position: relative;
+    width: 100%;
+    max-width: 1153px !important;
+  }
+
+  .recommend .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+  }
+
+
+  .recommend .swiper {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .recommend .swiper-button-next, .recommend .swiper-button-prev{   
+    width: 50px;   
+    height: 50px;   
+    border-radius: 50%;
+    /* border: 1px solid #000; */
+    color : #242424;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 4%);    
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+.recommend .swiper-button-next::after, .recommend .swiper-button-prev::after{
+    font-size: 20px !important;
+    font-weight: 900;
+}
+
+.recommend .swiper-pagination{
+    position: absolute;
+    left: 50% !important;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    border: 1px solid #000;
+    width: 60px !important;
+}
+
+.recommend.swiper-pagination span{
+    height: 40px;
+    
+}
+
+.recommend .slide{
+    background-color: #fff;
+    box-shadow: none !important;
+}
+
+.recommend .slide ul{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.recommend .slide li{    
+    cursor: pointer;
+    margin: 0 auto;
+    width: 98%;
+    /* height: 80px; */
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.recommend .slide li:first-child{
+    margin-top: 6px;
+}
+
+.recommend .slide li:last-child{
+    margin-bottom: 6px;
+}
+
+.recommend .slide li .thum{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+.recommend .slide li .thum .thumnail{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.recommend .slide li .thum .thumnail svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    fill: #59CE8F;
+}
+
+.recommend .slide li .thum .title,
+.recommend .slide li .thum .author{
+    display: inline-block;
+    text-align: left;
+    height: 25px;
+    width: 270px;    
+    font-size: 16px;
+}
+.recommend .slide li .thum .title{
+    width: 270px;
+    font-weight: 700;
+}
+
+.recommend .slide li .thum div{
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.recommend .slide li .extends{
+    display: none;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 100%;    
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* 커밍순 */
+
+.comming-soon .baily-book book {
+    position: relative;
+}
+
+.comming-soon .request{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #59CE8F;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
+}
+.comming-soon .request svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}

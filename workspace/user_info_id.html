@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/user_info.css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>BAILY</title>
+</head>
+<body>
+    <div class="member-wrap">
+        <div class="header">
+            <div class="header-inner">
+                <a href="index.html" class="logo"><h1 class="blind">BAILY</h1></a>
+            </div>
+        </div>
+    
+        <div id="member-wrap">
+            <div class="member-box">
+                <div class="member-form">
+                    <form action="#" id="member-form" method="GET">
+                        <h2>계정 찾기</h2>
+                        <div class="div-line"></div>
+                        <div>
+                            <p>계정을 검색하려면 이메일 주소 또는 휴대폰 번호를 입력하세요.</p>
+                            <input class="input input-email" type="text" name="email" id="email" placeholder="이메일 또는 전화번호">
+                        </div>
+                            <button class="member-button reset-button" name="reset" type="reset">취소</button>
+                            <button class="member-button search-button" name="search" type="submit">검색</button>
+                        </div>
+                    </form>
+                </div>            
+            </div>
+        </div>    
+    
+        <div class="footer">
+            <div class="footer-inner">
+                <ul class="services">
+                    <li><a href="#"><span class="text">이용약관</span></a></li>
+                    <li><a href="#"><span class="text"><strong>개인정보처리방침</strong></span></a></li>                
+                    <li><a href="#"><span class="text">회사 소개</span></a></li>
+                </ul>
+                <p class="copyright">copyright &copy; 2022 BAILY All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#member-form").submit(function(e){
+            e.preventDefault();
+
+            let userIdVal = $(".input-email").val();
+            if( userIdVal == '' ){
+                alert("이메일 또는 전화번호를 입력해주세요.");
+                $(this).focus();
+            }else if( userIdVal != 'user'){
+                alert("존재하지 않는 이메일 또는 전화번호 입니다.")
+            }else{
+                window.location.replace('user_info_pw.html');
+            }
+        });
+
+        $(".reset-button").click(function(){
+            window.location = "login.html";
+        });
+    </script>
+</body>
+</html>

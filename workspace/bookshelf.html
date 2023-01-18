@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/style.css"> 
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/bookshelf.css">
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/bookshelf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <title>BAILY</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="pointer"></div> -->
+    
+    <!-- header -->
+    <div class="header">
+        <div class="nav">
+            <div id="top-logo">
+                <a href="index.html">BAILY<img src="img\logo.png" alt="베일리로고"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="login.html">로그인</a>
+                </li>
+                <li>
+                    <a href="bookshelf.html">서재</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </div>        
+        
+        <!-- <div class="top-category-btn">
+            <div class="clse-btn">
+                <p>
+                    카테고리
+                </p>
+            </div>
+            <div id="category-content">
+                <div class="bookshelf-content">                    
+                    <div>
+                        <ul>
+                            <li><a href="#" class="c-btn"><span>오디오북</span></a></li>
+                            <li><a href="#" class="c-btn"><span>챗북</span></a></li>
+                            <li><a href="#" class="c-btn"><span>매거진</span></a></li>
+                            <li><a href="#" class="c-btn"><span>디즈니</span></a></li>
+                            <li><a href="#" class="c-btn"><span>소설</span></a></li>
+                            <li><a href="#" class="c-btn"><span>에세이</span></a></li>
+                            <li><a href="#" class="c-btn"><span>세계<br>문학<br>전집</span></a></li>
+                            <li><a href="#" class="c-btn"><span>경제<br>·<br>경영</span></a></li>
+                            <li><a href="#" class="c-btn"><span>자기<br>계발</span></a></li>
+                            <li><a href="#" class="c-btn"><span>외국어</span></a></li>
+                            <li><a href="#" class="c-btn"><span>IT</span></a></li>
+                            <li><a href="#" class="c-btn"><span>라이프<br>스타일</span></a></li>
+                            <li><a href="#" class="c-btn"><span>부모</span></a></li>
+                            <li><a href="#" class="c-btn"><span>어린이<br>·<br>청소년</span></a></li>
+                            <li><a href="#" class="c-btn"><span>인문</span></a></li>
+                            <li><a href="#" class="c-btn"><span>철학</span></a></li>
+                            <li><a href="#" class="c-btn"><span>사회</span></a></li>
+                            <li><a href="#" class="c-btn"><span>과학</span></a></li>
+                            <li><a href="#" class="c-btn"><span>역사</span></a></li>
+                            <li><a href="#" class="c-btn"><span>여행</span></a></li>
+                            <li><a href="#" class="c-btn"><span>종교</span></a></li>
+                            <li><a href="#" class="c-btn"><span>판타지<br>·<br>무협</span></a></li>
+                        </ul>
+                    </div>
+                                      
+                </div>
+            </div>
+        </div>      -->
+    </div>
+
+    <hr/>
+
+    <section class="swiper-wrap ranking">
+        <h2>베일리 인기 순위</h2>
+        <!-- Swiper -->
+        <div #swiperRef="" class="swiper mySwiperRank">            
+            
+            <div class="swiper-wrapper">                
+                <div class="swiper-slide slide slide1">
+                    <ul>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\a-retrograde-person.jpg" alt="역행자">
+                                </p>
+                                <div>
+                                    <p class="rank">1.<span> 역행자</span></p>
+                                    <p class="author">자청</p>
+                                </div>
+                            </div>
+                            <div class="extends extendsOn">
+                                <p class="sum">
+                                    <strong>수많은 '자청 챌린저'들을 만든</strong><br>라이프해커 자청의 인생 역주행 공식
+                                </p>
+                                <p class="img"><img src="img\books\a-retrograde-person.jpg" alt="역행자"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\4am.jpg" alt="나의 투자는 새벽 4시에 시작된다">
+                                </p>
+                                <div>
+                                    <p class="rank">2.<span> 나의 투자는 새벽 4시에 시작된다</span></p>
+                                    <p class="author">유목민</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>3년 만에 300억으로 돌아온</strong><br>투자 유목민의 인사이트
+                                </p>
+                                <p class="img"><img src="img\books\4am.jpg" alt="나의 투자는 새벽 4시에 시작된다"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\pachinko.jpg" alt="파친코">
+                                </p>
+                                <div>
+                                    <p class="rank">3.<span> 파친코</span></p>
+                                    <p class="author">이민진</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>“역사는 우리를 저버렸지만, 그래도 상관없다”
+                                        </strong><br>역사에 외면당한 재일조선인 가족의 대서사극
+                                </p>
+                                <p class="img"><img src="img\books\pachinko.jpg" alt="파친코"></p>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <ul>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\fathers-diary.jpg" alt="아빠의 해방일지">
+                                </p>
+                                <div>
+                                    <p class="rank">4.<span> 아빠의 해방일지</span></p>
+                                    <p class="author">정지아</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>새삼스럽게 경탄스럽다!</strong><br>압도적인 몰입감, 가슴 먹먹한 감동
+                                </p>
+                                <p class="img"><img src="img\books\fathers-diary.jpg" alt="아빠의 해방일지"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\grit.jpg" alt="그릿">
+                                </p>
+                                <div>
+                                    <p class="rank">5.<span> 그릿</span></p>
+                                    <p class="author">앤절라 더크워스</p>
+                                </div>
+                            </div>
+                            <div class="extends extendsOn">
+                                <p class="sum">
+                                    <strong>실패, 역경, 슬럼프를 이겨낸</strong><br>성공의 비밀!
+                                </p>
+                                <p class="img"><img src="img\books\grit.jpg" alt="그릿"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\Harbin.jpg" alt="하얼빈">
+                                </p>
+                                <div>
+                                    <p class="rank">6.<span> 하얼빈</span></p>
+                                    <p class="author">김훈</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>칼의 노래를 넘어서는 깊이와 감동</strong><br>김훈이 반드시 써내야만 했던 일생의 과업
+                                </p>
+                                <p class="img"><img src="img\books\Harbin.jpg" alt="하얼빈"></p>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide3">
+                    <ul>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\last-station.jpg" alt="세상의 마지막 기차역">
+                                </p>
+                                <div>
+                                    <p class="rank">7.<span> 세상의 마지막 기차역</span></p>
+                                    <p class="author">무라세 다케시</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>사랑하는 사람을 떠나보낸</strong><br>애틋한 판타지
+                                </p>
+                                <p class="img"><img src="img\books\last-station.jpg" alt="세상의 마지막 기차역"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\the-wisdom-of-gaining people.jpg" alt="사람을 얻는 지혜">
+                                </p>
+                                <div>
+                                    <p class="rank">8.<span> 사람을 얻는 지혜</span></p>
+                                    <p class="author">발타자르 그라시안</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>위선과 탐욕이 난무하는 시대에 전하는</strong><br>위대한 지침서
+                                </p>
+                                <p class="img"><img src="img\books\the-wisdom-of-gaining people.jpg" alt="사람을 얻는 지혜"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\the-theory-of-human-relations.jpg" alt="데일 카네기 인간관계론">
+                                </p>
+                                <div>
+                                    <p class="rank">9.<span> 데일 카네기 인간관계론</span></p>
+                                    <p class="author">데일 카네기</p>
+                                </div>
+                            </div>
+                            <div class="extends extendsOn">
+                                <p class="sum">
+                                    <strong>데일 카네기가 전하는</strong><br>성공하는 인간관계의 비밀
+                                </p>
+                                <p class="img"><img src="img\books\the-theory-of-human-relations.jpg" alt="데일 카네기 인간관계론"></p>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide4">
+                    <ul>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\the kitchen of books.jpg" alt="책들의 부엌">
+                                </p>
+                                <div>
+                                    <p class="rank">10.<span> 책들의 부엌</span></p>
+                                    <p class="author">김지혜</p>
+                                </div>
+                            </div>
+                            <div class="extends extendsOn">
+                                <p class="sum">
+                                    <strong>일상에서 쉼표가 필요할 때</strong><br>잔잔한 바람이 느껴지는 힐링 소설
+                                </p>
+                                <p class="img"><img src="img\books\the kitchen of books.jpg" alt="책들의 부엌"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\good attitude.jpg" alt="역행자">
+                                </p>
+                                <div>
+                                    <p class="rank">11.<span> 참 좋은 태도</span></p>
+                                    <p class="author">박지현</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    15년 동안 길 위에서 만난<br><strong></strong>수많은 사람들에게 배운 삶의 의미</strong>
+                                </p>
+                                <p class="img"><img src="img\books\good attitude.jpg" alt="참 좋은 태도"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\Nietzsche reads at forty.jpg" alt="마흔에 읽는 니체">
+                                </p>
+                                <div>
+                                    <p class="rank">12.<span> 마흔에 읽는 니체</span></p>
+                                    <p class="author">장재형</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>지금 이 순간을 살기 위한</strong><br>철학 수업
+                                </p>
+                                <p class="img"><img src="img\books\Nietzsche reads at forty.jpg" alt="마흔에 읽는 니체"></p>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide5">
+                    <ul>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\When I don't know, my mind..jpg" alt="내 마음을 나도 모를 때">
+                                </p>
+                                <div>
+                                    <p class="rank">13.<span> 내 마음을 나도 모를 때</span></p>
+                                    <p class="author">양재진, 양재웅</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>생각이 많은 섬세한</strong><br>당신을 위한 양브로의 특급 처방
+                                </p>
+                                <p class="img"><img src="img\books\When I don't know, my mind..jpg" alt="내 마음을 나도 모를 때"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\demian.jpg" alt="데미안">
+                                </p>
+                                <div>
+                                    <p class="rank">14.<span> 데미안</span></p>
+                                    <p class="author">을유문화사</p>
+                                </div>
+                            </div>
+                            <div class="extends">
+                                <p class="sum">
+                                    <strong>불안한 젊음에 바치는</strong><br>헤르만 헤세의 영혼의 이야기!
+                                </p>
+                                <p class="img"><img src="img\books\demian.jpg" alt="데미안"></p>
+                            </div>
+                        </li>
+                        <li class="ranklist">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <img src="img\books\uncomfortable convenience store.jpg" alt="불편한 편의점">
+                                </p>
+                                <div>
+                                    <p class="rank">15.<span> 불편한 편의점</span></p>
+                                    <p class="author">김호연</p>
+                                </div>
+                            </div>
+                            <div class="extends extendsOn">
+                                <p class="sum">
+                                    <strong>고난의 시간을 통과하는</strong><br>사람들의 이야기
+                                </p>
+                                <p class="img"><img src="img\books\uncomfortable convenience store.jpg" alt="불편한 편의점"></p>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+
+    <!-- unlimites -->
+    <section class="unlimited audio">
+        <div class="section-wrap">
+            <div class="unlimited-wrap">
+                <!-- 오디오북 추천 리스트 -->
+                <div class="book-list">
+                    <strong>오디오북 추천 리스트</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img/books/the kitchen of books.jpg" alt="책들의 부엌">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">책들의 부엌</p>
+                                                <p class="author">김지혜</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 10%
+                                                    <span class="line"> | </span>
+                                                    482분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\Woo Young-woo, a strange lawyer.jpg" alt="이상한 변호사 우영우">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">이상한 변호사 우영우1</p>
+                                                <p class="author">문지원</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\practicing mom's words.jpg" alt="엄마의 말연습">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">엄마의 말연습</p>
+                                                <p class="author">윤지영</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\uncomfortable convenience store.jpg" alt="불편한 편의점">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">불편한 편의점</p>
+                                                <p class="author">김호연</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 70%
+                                                    <span class="line"> | </span>
+                                                    322분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\uncomfortable convenience store2.jpg" alt="불편한 편의점2">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">불편한 편의점2</p>
+                                                <p class="author">김호연</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 20%
+                                                    <span class="line"> | </span>
+                                                    479분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\to you.jpg" alt="잘 될 수 밖에 없는 너에게">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">잘 될 수 밖에 없는 너에게</p>
+                                                <p class="author">최서영</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                              </svg>
+                                        </div>
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\To fail quickly.jpg" alt="빠르게 실패하기">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">빠르게 실패하기</p>
+                                                <p class="author">존 크럼불츠, 라이언 바비노 / 도연</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 베일리 오리지널 -->
+                <div class="book-list">
+                    <strong>베일리 오리지널</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\to you.jpg" alt="잘 될 수 밖에 없는 너에게">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">잘 될 수 밖에 없는 너에게</p>
+                                                <p class="author">최서영</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\bible.jpg" alt="자소서 바이블">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">자소서 바이블</p>
+                                                <p class="author">면접왕이형(이준희)</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 50%
+                                                    <span class="line"> | </span>
+                                                    139분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\To fail quickly.jpg" alt="빠르게 실패하기">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">빠르게 실패하기</p>
+                                                <p class="author">존 크럼불츠, 라이언 바비노 / 도연</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\Nietzsche reads at forty.jpg" alt="마흔에 읽는 니체">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">마흔에 읽는 니체</p>
+                                                <p class="author">장재형</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 44%
+                                                    <span class="line"> | </span>
+                                                    198분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\Woo Young-woo, a strange lawyer.jpg" alt="이상한 변호사 우영우">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">이상한 변호사 우영우1</p>
+                                                <p class="author">문지원</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\How long will you live like this.jpg" alt="언제까지 이따위로 살 텐가">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">언제까지 이따위로 살 텐가</p>
+                                                <p class="author">모범피/동생피</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 57%
+                                                    <span class="line"> | </span>
+                                                    116분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\books\good attitude.jpg" alt="참 괜찮은 태도">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">참 괜찮은 태도</p>
+                                                <p class="author">박지현</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 36%
+                                                    <span class="line"> | </span>
+                                                    207분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </section>
+
+    <section class="swiper-wrap bestAuthor">
+        <h2>주목하는 작가</h2>
+        <!-- Swiper -->
+
+        <div #swiperRef="" class="swiper mySwiperAuthor">            
+            <div class="swiper-wrapper">                
+                <div class="swiper-slide slide slide1">
+                    <div class="img"><img src="img\author\kim-Young-ha-black.png" alt=""></div>             
+                    <div class="txt">
+                        <p class="author"><strong>김영하</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <div class="img"><img src="img\author\Paul Auster.jpg.png" alt=""></div>             
+                    <div class="txt">
+                        <p class="author"><strong>폴 오스터</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide3">
+                    <div class="img"><img src="img\author\Higashino Keigo.png" alt=""></div>             
+                    <div class="txt">
+                        <p class="author"><strong>히가시노 게이고</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="swiper-slide slide slide4">
+                    <div class="img"><img src="img\author\shin.png" alt=""></div>             
+                    <div class="txt">
+                        <p class="author"><strong>신영복</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="swiper-wrap recommend">        
+        <!-- Swiper -->
+        <h2>취향 맞춤 추천</h2>
+        <div #swiperRef="" class="swiper mySwiperRecommend">            
+            <div class="swiper-wrapper">                
+                <div class="swiper-slide slide slide1">
+                    <ul>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                                        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">오디오북</p>
+                                    <p class="author">언제 어디서나 귀로 읽는 책!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-signpost-fill" viewBox="0 0 16 16">
+                                        <path d="M7.293.707A1 1 0 0 0 7 1.414V4H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h5v6h2v-6h3.532a1 1 0 0 0 .768-.36l1.933-2.32a.5.5 0 0 0 0-.64L13.3 4.36a1 1 0 0 0-.768-.36H9V1.414A1 1 0 0 0 7.293.707z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">매거진</p>
+                                    <p class="author">모든 트렌드를 섭렵하기</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">소설</p>
+                                    <p class="author">로멘스, 스릴러, 추리, 역사 등</p>
+                                </div>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide2">
+                    <ul>
+                        <li class="">
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                        <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+                                        <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">언어</p>
+                                    <p class="author">한국어, 일본어, 영어 모두 다</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">IT</p>
+                                    <p class="author">개발, 프로그래밍, IT 교양, e비즈니스</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">부모</p>
+                                    <p class="author">부모, 영유아, 자녀 교육, 자녀 건강</p>
+                                </div>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide3">
+                    <ul>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">인문</p>
+                                    <p class="author">인문학, 문명, 문화, 심리학, 독서</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                                        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">종교</p>
+                                    <p class="author">기독교, 학술 연구, 불교</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">여행</p>
+                                    <p class="author">여행 에세이, 유럽, 호주, 국내</p>
+                                </div>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+                <div class="swiper-slide slide slide4">
+                    <ul>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                                        <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">경제경영</p>
+                                    <p class="author">4차 산업혁명, 세계 경제</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyedropper" viewBox="0 0 16 16">
+                                        <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">과학</p>
+                                    <p class="author">물리학, 공학, 인체, 수학</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="thum">
+                                <p class="thumnail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                                        <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                        <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                      </svg>
+                                </p>
+                                <div>
+                                    <p class="title">에세이</p>
+                                    <p class="author">시, 일상, 위로, 사랑</p>
+                                </div>
+                            </div>
+                        </li>                      
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- unlimites -->
+    <section class="unlimited">
+        <div class="section-wrap">
+            <div class="unlimited-wrap">
+                <!-- 새로 들어온 책 -->
+                <div class="book-list">
+                    <strong>새로 들어온 책</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\1.jpg" alt="개발자로 살아남기">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">개발자로 살아남기</p>
+                                                <p class="author">박종천</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 10%
+                                                    <span class="line"> | </span>
+                                                    482분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\2.jpg" alt="공학의 시간">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">공학의 시간</p>
+                                                <p class="author">이순석</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 45%
+                                                    <span class="line"> | </span>
+                                                    546분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\3.jpg" alt="너를 만났다.">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">너를 만났다.</p>
+                                                <p class="author">김종우</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\4.jpg" alt="당신의 식당을 바꿔드립니다.">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">당신의 식당을 바꿔드립니다.</p>
+                                                <p class="author">이경태, 정효영</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 70%
+                                                    <span class="line"> | </span>
+                                                    322분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\5.jpg" alt="반짝이는 하루, 그게 오늘이야">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">반짝이는 하루, 그게 오늘이야</p>
+                                                <p class="author">레슬리 마샹</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 20%
+                                                    <span class="line"> | </span>
+                                                    479분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\6.jpg" alt="오래된 불씨">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">오래된 불씨</p>
+                                                <p class="author">고금란</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\7.jpg" alt="원더보이">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">원더보이</p>
+                                                <p class="author">김연수</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\8.jpg" alt="종이 동물원">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">종이 동물원</p>
+                                                <p class="author">켄 리우</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\new\9.jpg" alt="피트니스의 시대">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">피트니스의 시대</p>
+                                                <p class="author">위르겐 마르추카트</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 개발자를 위한 지침서 -->
+                <div class="book-list">
+                    <strong>개발자를 위한 지침서</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\1.jpg" alt="개발자 상식">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">개발자 상식</p>
+                                                <p class="author">박민경</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 36%
+                                                    <span class="line"> | </span>
+                                                    207분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\2.jpg" alt="개발자로 살아남기">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">개발자로 살아남기</p>
+                                                <p class="author">박종천</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 50%
+                                                    <span class="line"> | </span>
+                                                    139분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\3.jpg" alt="개발자의 글쓰기">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">개발자의 글쓰기</p>
+                                                <p class="author">IT 개발자</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 57%
+                                                    <span class="line"> | </span>
+                                                    116분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\4.jpg" alt="개발자의 꿈">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">개발자의 꿈</p>
+                                                <p class="author">IT 개발자</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 32%
+                                                    <span class="line"> | </span>
+                                                    166분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\5.jpg" alt="나는 주니어 개발자다">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">나는 주니어 개발자다</p>
+                                                <p class="author">지찬규</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 44%
+                                                    <span class="line"> | </span>
+                                                    198분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\6.jpg" alt="어떤 개발자가 살아남는가">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">어떤 개발자가 살아남는가</p>
+                                                <p class="author">이경종</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 22%
+                                                    <span class="line"> | </span>
+                                                    128분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\7.jpg" alt="오늘도 우리는 코딩을 합니다.">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">오늘도 우리는 코딩을 합니다.</p>
+                                                <p class="author">고코더</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\coder\8.jpg" alt="오늘부터 개발자">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">오늘부터 개발자</p>
+                                                <p class="author">김병욱</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 매거진 -->
+                <div class="book-list">
+                    <strong>베일리 매거진</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\1.jpg" alt="더그아웃">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">더그아웃</p>
+                                                <p class="author">2022년 9월호</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 10%
+                                                    <span class="line"> | </span>
+                                                    482분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\2.jpg" alt="싱글즈">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">싱글즈</p>
+                                                <p class="author">2022년 9월호</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\3.jpg" alt="악스트">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">악스트</p>
+                                                <p class="author">은행나무</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\4.jpg" alt="올리브 매거진 코리아">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">올리브 매거진 코리아</p>
+                                                <p class="author">안그라픽스 편집부</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 70%
+                                                    <span class="line"> | </span>
+                                                    322분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\5.jpg" alt="킨포크">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">킨포크</p>
+                                                <p class="author">킨포크매거진</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 20%
+                                                    <span class="line"> | </span>
+                                                    479분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\magazine\6.jpg" alt="월간사진">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">월간사진</p>
+                                                <p class="author">월간사진</p>
+                                                <p class="reading">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                        </svg> 49%
+                                                    <span class="line"> | </span>
+                                                    142분
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 커밍순, 곧 들어올 책 -->
+                <div class="book-list comming-soon">
+                    <strong>커밍순, 곧 들어올 책</strong>
+                    <div class="book-shelf">
+                        <div class="slide-container swiper-container swiper myFreeSwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-free-mode swiper-backface-hidden">
+                            <div class="slide-wrapper swiper-wrapper">
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\1.jpg" alt="나를 향해 걷는 열걸음">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">나를 향해 걷는 열걸음</p>
+                                                <p class="author">최진석</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\2.jpg" alt="성취하는 뇌">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">성취하는 뇌</p>
+                                                <p class="author">마르틴 코르테</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\3.jpg" alt="슬픔은 원샷, 매일이 맑음">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">슬픔은 원샷, 매일이 맑음</p>
+                                                <p class="author">김한솔</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\4.jpg" alt="실패의 실력">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">실패의 실력</p>
+                                                <p class="author">홍신기</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\5.jpg" alt="아이는 부모의 등을 보고 자란다.">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">아이는 부모의 등을 보고 자란다.</p>
+                                                <p class="author">조윤재</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\6.jpg" alt="치매의 거의 모든 기록">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">치매의 거의 모든 기록</p>
+                                                <p class="author">웬디 미첼</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\7.jpg" alt="톨락의 아내">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">톨락의 아내</p>
+                                                <p class="author">랜베르그</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slide-item swiper-slide">
+                                    <div class="baily-book book">
+                                        <a href="#">
+                                            <div class="thumnail">
+                                                <img src="img\comming\8.jpg" alt="와인콘서트">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="data">
+                                                <p class="badge"></p>
+                                                <p class="title">와인콘서트</p>
+                                                <p class="author">김관웅</p>
+                                                <p class="reading">
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="request">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                              </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </section>
+    
+    
+    <hr/>
+    <!-- footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-head">
+                <h1 class="footer-logo">BAILY</h1>
+                <ul class="sns">
+                    <li><a href="https://www.instagram.com/">인스타</a></li>
+                    <li><a href="https://ko-kr.facebook.com/">페이스북</a></li>
+                    <li><a href="https://www.kakaocorp.com/">카카오톡</a></li>
+                    <li><a href="https://www.naver.com/">네이버</a></li>
+                </ul>
+            </div>
+
+            <ul class="services">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">B2B 문의</a></li>
+                <li><a href="#">콘텐츠 제휴문의</a></li>
+                <li><a href="#">뷰어 다운로드</a></li>
+                <li><a href="#">회사 소개</a></li>
+            </ul>
+            <p class="copyright">copyright &copy; 2022 BAILY All Rights Reserved.</p>
+        </div>
+          
+    </footer>
+
+   <!-- top button -->
+   <div>
+    <button id="topBtn">페이지 맨 위로 가기
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+      </svg>
+    </button>
+    </div>
+</body>
+</html>
